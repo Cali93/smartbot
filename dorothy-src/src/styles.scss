@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+$bgWidth: 10000px;
+body {
+  padding: 3em;
+  font-family: 'Raleway', 'Arial';
+  color:#18CDCA;
+  font-weight: bold;
+  background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#193441 40%,#91AAB4 60%,#003A61 83%,#1e5799 100%);
+  background-size: $bgWidth 100%;
+  animation: bg 15s linear infinite ;
+}
+
+@keyframes bg{
+  0%{
+    background-position-x: 0;
+  }
+
+  100%{
+    background-position-x: $bgWidth;
+  }
+}
+// ul {
+//     list-style-type:none;
+//     margin:0 0 2em 0;
+//     padding:0;
+// }
+// ul li {
+//     display:inline;
+//     margin-right: 30px;
+// }
+// ul li a {
+//     font-size: 1.5em;
+// }
+// a {
+//     color:#fff;
+//     text-decoration:none;
+// }
