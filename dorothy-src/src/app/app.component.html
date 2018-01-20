@@ -10,6 +10,7 @@
 </div>
 
 <div  class="chatform">
+  <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
   <message-list [messages]="messages"></message-list>
   <message-form [message]="message" [messages]="messages"></message-form>
 </div>

@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ParticlesModule } from 'angular-particle';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -16,7 +17,8 @@ import { MessageListComponent, MessageFormComponent, MessageItemComponent } from
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ParticlesModule
   ],
   providers: [
     DialogflowService
