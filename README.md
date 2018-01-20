@@ -21,7 +21,7 @@ Une fois NodeJS et Node Package Manager installé globalement vérifiez la versi
 node -v
 npm -v
 ```
-Une fois NodeJS installé, allez dans le dossier où vous avez cloner le repo et executez ces commandes: 
+Ensuite, allez dans le dossier où vous avez cloner le repo et executez ces commandes: 
 ```
 cd dorothy-src
 npm install
@@ -33,7 +33,7 @@ npm install
 npm install -g angular-cli
 ```
 
-Une fois celui-ci installé il vous suffit d'exécuter cette commande
+Une fois celui-ci installé il vous suffit d'executer cette commande
 ```
 ng serve
 ```
