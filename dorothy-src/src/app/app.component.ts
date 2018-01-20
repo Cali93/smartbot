@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   constructor(){
     this.message = new Message('', 'assets/images/user.png');
     this.messages = [
-      new Message('Welcome to the CyWorld', 'assets/images/bot.png', new Date())
+      new Message('Hello, I\'m so glad to meet you !', 'assets/images/dorovector.png', new Date())
     ];
   }
 
