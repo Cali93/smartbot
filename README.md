@@ -1,5 +1,7 @@
 # Dorothy Smart AI Agent
 
+#### Dorothy est une intelligence artificielle créée via DialogFlow.
+
 ## Guide d'utilisation :
 
 ### 1: Clonez le repo
