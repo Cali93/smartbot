@@ -1,0 +1,244 @@
+/*=========================
+Lady Deep Project Interface
+===========================*/
+
+/* ================
+	Background
+===================*/
+
+body, html {
+	height : 100%;
+	margin: 0px;
+}
+
+body {
+	
+ 	background:linear-gradient(#010014, #000000);
+ 	background-size: cover;
+ 	
+ /*animation: bgcolor 10s infinite; === Animation name ===*/
+}
+
+/*========================
+Background color changing
+==========================*/
+/*@keyframes bgcolor {
+  0% {
+    background-color: #00101E;
+  }
+  50%{
+  	background-color: #25022E;
+  }
+  100% {
+    background-color: #00101E;
+  }
+}
+*/
+
+/*================
+Input Bar Style 
+==================*/
+
+#user {
+ max-width: 100%;
+ 
+ margin: 3em;
+}
+
+#user input {
+ border: 0;
+ border-bottom: 2px solid #FF1919; /*Line under input text*/
+ width: 100%;
+ font-size: 1.5em;
+ line-height: 35px;
+ height: 80px;
+ font-family: 'Raleway', sans-serif;
+ text-align: center;
+ background: transparent;
+ color: white;
+ animation: colorBar 2s infinite;
+}
+
+@keyframes colorBar {
+  0% {
+  	opacity: 0.8;
+    border-bottom: 2px solid #020A88;
+  }
+  50%{
+  	opacity: 1;
+  	border-bottom: 2px solid #00FCFD;
+  }
+  100% {
+  	opacity: 0.8;
+    border-bottom: 2px solid #020A88;
+  }
+}
+
+
+#user input:focus {
+ outline: 0;
+	color: #BBDEFA;
+}
+
+#user input::placeholder {
+ font-family: 'Raleway', sans-serif;
+ color: white;
+ opacity: 0.5;
+
+}
+
+p {
+ text-align: center;
+ font-color: white;
+ /*visibility: hidden;*/
+}
+
+/*================
+	Dorothy9000
+==================*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-moz-keyframes pulse {
+  0% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes "pulse" {
+  0% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes "pulse" {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes "pulse" {
+  0% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  100% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+.-circular,
+.dorothy-eye .__ring:before,
+.dorothy-eye .__oculus .__iris {
+  border-radius: 100%;
+}
+
+.dorothy {
+  height: 10%;
+  min-height: 21.125em;
+  min-width: 18.75em;
+  padding: 0.625em;
+}
+
+.dorothy-eye {
+  bottom: 8%;
+  height: 15em;
+  left: 50%;
+  margin: 0 0 0-7.5em;
+  position: relative;
+  width: 15em;
+}
+
+.dorothy-eye .__ring {
+  height: 10%;
+  padding: 0.5em;
+  position: absolute; /* relative by default*/
+  /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a9a9a9), color-stop(20%, #ffffff), color-stop(40%, #595959), color-stop(65%, #b3b3b3), color-stop(100%, #666666));
+  background-image: -webkit-linear-gradient(#a9a9a9, #ffffff 20%, #595959 40%, #b3b3b3 65%, #666666);
+  background-image: -moz-linear-gradient(#a9a9a9, #ffffff 20%, #595959 40%, #b3b3b3 65%, #666666);
+  background-image: -o-linear-gradient(#a9a9a9, #ffffff 20%, #595959 40%, #b3b3b3 65%, #666666);
+  background-image: linear-gradient(#a9a9a9, #ffffff 20%, #595959 40%, #b3b3b3 65%, #666666); */
+}
+
+.dorothy-eye .__ring:before {
+  content: '';
+  display: block;
+  height: 10%;
+  width: 100%;
+  /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #737373), color-stop(14%, #666666), color-stop(50%, #a9a9a9), color-stop(72%, #999999), color-stop(80%, #b7b7b7), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#737373, #666666 14%, #a9a9a9 50%, #999999 72%, #b7b7b7 80%, #cccccc);
+  background-image: -moz-linear-gradient(#737373, #666666 14%, #a9a9a9 50%, #999999 72%, #b7b7b7 80%, #cccccc);
+  background-image: -o-linear-gradient(#737373, #666666 14%, #a9a9a9 50%, #999999 72%, #b7b7b7 80%, #cccccc);
+  background-image: linear-gradient(#737373, #666666 14%, #a9a9a9 50%, #999999 72%, #b7b7b7 80%, #cccccc); */
+}
+
+.dorothy-eye .__oculus .__iris {
+  content: '';
+  display: block;
+  height: 80%; /* Define the size of the ball */
+  width: 80%;
+  position: absolute;
+}
+
+/* First blink color range */
+.dorothy-eye .__oculus .__iris.-narrow {
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 85, color-stop(2%, #fff063), color-stop(10%, #fa0c02), color-stop(30%, #c80901), color-stop(55%, #310200), color-stop(85%, #000000));
+  background-image: -webkit-radial-gradient(center center, circle cover, #fff063 2%, #00BCD4 10%, #2196F3 30%, #000000 55%, #000000 85%);
+  background-image: -moz-radial-gradient(center center, circle cover, #fff063 2%, #020A88 10%, #00FCFD 30%, #FF5959 55%, #000000 85%);
+  background-image: -o-radial-gradient(center center, circle cover, #fff063 2%, #020A88 10%, #00FCFD 30%, #FF5959 55%, #000000 85%);
+  background-image: radial-gradient(center center, circle cover, #fff063 2%, #020A88 10%, #00FCFD 30%, #FF1919 55%, #000000 85%);
+}																
+/* Second blink color range */
+.dorothy-eye .__oculus .__iris.-wide {
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 85, color-stop(5%, #fff063), color-stop(15%, #fa0c02), color-stop(40%, #c80901), color-stop(65%, #0c0000), color-stop(85%, #000000));
+  background-image: -webkit-radial-gradient(center center, circle cover, #fff063 5%, #2196F3 15%, #E4104E 40%, #FF1919 65%, #2196F3 85%);
+  background-image: -moz-radial-gradient(center center, circle cover, #fff063 5%, #2196F3 15%, #E4104E 40%, #FF1919 65%, #2196F3 85%);
+  background-image: -o-radial-gradient(center center, circle cover, #fff063 5%, #2196F3 15%, #E4104E 40%, #FF1919 65%, #2196F3 85%);
+  background-image: radial-gradient(center center, circle cover, #fff063 5%, #2196F3 15%, #E4104E 40%, #FF1919 65%, #2196F3 85%);
+  -webkit-animation: pulse 2s ease-in-out infinite alternate;
+  -moz-animation: pulse 2s ease-in-out infinite alternate;
+  -ms-animation: pulse 2s ease-in-out infinite alternate;
+  -o-animation: pulse 2s ease-in-out infinite alternate;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+
+@media only screen and (min-width: 30em) {
+
+
+  .dorothy-eye {
+    height: 21.875em;
+    margin-left: -8.9375em;
+    margin-top: 1em;
+    margin-bottom:5em;
+    width: 21.875em;
+  }
+}
+
+
