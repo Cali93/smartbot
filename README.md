@@ -32,7 +32,7 @@ npm install
 ### 4 : Installez le Angular CLI de manière globale (https://www.npmjs.com/package/angular-cli): 
 
 ```
-npm install -g angular-cli
+npm install -g @angular/cli
 ```
 
 Une fois celui-ci installé il vous suffit d'executer cette commande
