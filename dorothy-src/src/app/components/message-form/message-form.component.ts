@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Message } from '@app/models';
 import { DialogflowService } from '@app/services';
+import {MatInputModule} from '@angular/material/input';
 
 @Component({
   selector: 'message-form',
@@ -10,10 +11,10 @@ import { DialogflowService } from '@app/services';
 export class MessageFormComponent implements OnInit {
 
   @Input('message')
-  private message : Message;
+  public message: Message;
 
   @Input('messages')
-  private messages : Message[];
+  public messages: Message[];
 
   constructor(private dialogFlowService: DialogflowService) { }
 
@@ -26,7 +27,7 @@ export class MessageFormComponent implements OnInit {
 
     this.dialogFlowService.getResponse(this.message.content).subscribe(res => {
       this.messages.push(
-        new Message(res.result.fulfillment.speech, 'assets/images/dorovector.png', res.timestamp)
+        new Message(res.result.fulfillment.speech, 'assets/images/brainai.png', res.timestamp)
       );
     });
 

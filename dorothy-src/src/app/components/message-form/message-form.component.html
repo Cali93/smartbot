@@ -1,4 +1,6 @@
-<div class="chatcontrol">
-  <input type="text" class="form-control chatinput" [(ngModel)]="message.content"/>
-  <button type="button" class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
-</div>
+<form class="chatcontrol">
+  <mat-form-field class="chatcontrol">
+    <input matInput type="text" class="form-control chatinput" [(ngModel)]="message.content" name="content"><button type="button" class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+  </mat-form-field>
+
+</form>

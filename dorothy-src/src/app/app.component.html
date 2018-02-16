@@ -1,16 +1,77 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="circle">
-  <div class="blob blob1"></div>
-  <div class="blob blob2"></div>
-  <div class="blob blob3"></div>
-</div>
-
-<div class="loader-walk">
-  <div></div><div></div><div></div><div></div><div></div>
-</div>
-
-<div  class="chatform">
+<div id="particles-js">
   <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
-  <message-list [messages]="messages"></message-list>
-  <message-form [message]="message" [messages]="messages"></message-form>
 </div>
+<main>
+  <div class="is-loading">
+    <div class="circle">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+
+    <div class="loader-walk">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="chatform">
+      <message-list [messages]="messages"></message-list>
+      <message-form [message]="message" [messages]="messages"></message-form>
+    </div>
+  </div>
+</main>
+
+<!-- The content below is only a placeholder and can be replaced.
+<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
+  <div fxHide.gt-sm fxLayoutAlign="start center">
+    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">{{title}}</span>
+  </div>
+  <div fxHide.lt-md>
+    <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+    <button mat-button routerLink="/home" routerLinkActive="active">
+      <i class="fa fa-home"></i>
+      <span translate>Home</span>
+    </button>
+    <button mat-button routerLink="/about" routerLinkActive="active">
+      <i class="fa fa-question-circle"></i>
+      <span translate>About</span>
+    </button>
+    <button mat-button routerLink="/chat" routerLinkActive="active">
+      <i class="fa fa-question-circle"></i>
+      <span translate>Chat</span>
+    </button>
+  </div>
+  <span fxFlex></span>
+  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+    <mat-icon>language</mat-icon>
+  </button>
+  <mat-menu >
+    <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
+        {{language}}
+      </button>
+  </mat-menu>
+  <button mat-icon-button [matMenuTriggerFor]="userMenu">
+    <mat-icon>person</mat-icon>
+  </button>
+  <mat-menu>
+    <mat-list>
+      <mat-list-item>
+        <span translate>Logged in as</span>&nbsp;<b>Cali</b>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+    <button mat-menu-item (click)="logout()" translate>Logout</button>
+  </mat-menu>
+</mat-toolbar>
+      <mat-sidenav-container class="example-container" *ngIf="shouldRun">
+          <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+          <mat-sidenav-content>Main content</mat-sidenav-content>
+        </mat-sidenav-container>
+        <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+      -->
