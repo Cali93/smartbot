@@ -1,5 +1,7 @@
 # Dorothy Smart AI Agent
 
+#### Dorothy est une intelligence artificielle créée via DialogFlow. Elle aura pour but d'aider les apprenants de BeCode.
+
 ## Guide d'utilisation :
 
 ### 1: Clonez le repo
@@ -30,7 +32,7 @@ npm install
 ### 4 : Installez le Angular CLI de manière globale (https://www.npmjs.com/package/angular-cli): 
 
 ```
-npm install -g angular-cli
+npm install -g @angular/cli
 ```
 
 Une fois celui-ci installé il vous suffit d'executer cette commande
