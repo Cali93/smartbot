@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 200,
+          value: 100,
         },
         color: {
           value: '#2b7b9e'
@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
           'random': true,
           'anim': {
             'enable': false,
-            'speed': 40,
+            'speed': 30,
             'size_min': 0.1,
             'sync': false
           }
@@ -86,7 +86,7 @@ export class AppComponent implements OnInit {
         },
         'move': {
           'enable': true,
-          'speed': 6,
+          'speed': 4,
           'direction': 'none',
           'random': false,
           'straight': false,
