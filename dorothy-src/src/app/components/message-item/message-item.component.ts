@@ -14,10 +14,10 @@ export class MessageItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.setInterval(function() {
-      const elem = document.getElementById('data');
-      elem.scrollTop = elem.scrollHeight;
-    }, 1000);
+    // window.setInterval(function() {
+    //   const elem = document.getElementById('data');
+    //   elem.scrollTop = elem.scrollHeight;
+    // }, 1000);
   }
 
 }

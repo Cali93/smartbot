@@ -33,9 +33,16 @@
   .terminal-input {
     background:none;
     border:none;
-    color:white;
+    color:#105d8a;
+    min-width: 350px;
+    max-width: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
   }
 
+  input:focus{
+    outline: none;
+  }
   .user-request .user {
   display: inline-block;
   color: rgba(255,66,64,1); /* #ff4240 */
@@ -60,6 +67,7 @@
   }
   .user-request .user-input {
   min-width: 10px;
+  max-width: auto;
   display: inline-block;
   }
   .user-request .user-input:focus {
@@ -81,3 +89,4 @@
   animation: blink .5s ease-in-out;
   animation-iteration-count: infinite;
   }
+

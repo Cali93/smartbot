@@ -1,7 +1,5 @@
 .message {
-  font-size: 1.5em;
   font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
 }
 
 .timeform {
@@ -22,10 +20,43 @@
   margin-right: 20px;
 }
 
+.avatar:hover {
+  animation-name: tada !important;
+  animation-duration: 2s;
+}
+
 .list-group-item {
   background: none !important;
   animation-name: zoomInLeft !important;
   animation-duration: 3s;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes zoomInLeft {

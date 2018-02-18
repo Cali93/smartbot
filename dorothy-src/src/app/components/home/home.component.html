@@ -1,11 +1,11 @@
 <div class="wrapper">
 
   <div id="particles-js">
-      <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+    <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
   </div>
   <!-- Add your site or application content here -->
   <div class="is-loading">
-  <header class="round">
+    <header class="round">
       <div class="round-group">
         <div class="round-item round-bg">
           <div class="round-item round-top"></div>
@@ -17,9 +17,15 @@
       <header class="terminal-header">
         <div class="terminal-header-item">Terminal session</div>
         <div class="terminal-header-item">
-          <button class="terminal-header-btn minimize" disabled><i class="fa fa-window-minimize" aria-hidden="true"></i></button>
-          <button class="terminal-header-btn maximize"><i class="fa fa-window-maximize" aria-hidden="true"></i></button>
-          <button class="terminal-header-btn close"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <button class="terminal-header-btn minimize" disabled>
+            <i class="fa fa-window-minimize" aria-hidden="true"></i>
+          </button>
+          <button class="terminal-header-btn maximize">
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+          </button>
+          <button class="terminal-header-btn close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
 
         </div>
       </header>
@@ -33,22 +39,22 @@
           &nbsp;
         </div> -->
         <div class="instruction">
-          <div class="user-request"><span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="request">connexion -u {{ user }}</span></div>
-          <message-list class="answer" [messages]="messages"></message-list>
+          <div class="user-request">
+            <span class="user">dorothAI@becode</span>
+            <span class="symbol">:~$</span>
+            <span class="request">connexion -u {{ user }}</span>
+          </div>
+          <div #scroller class="feedWrapper">
+            <message-list class="answer" [messages]="messages"></message-list>
+          </div>
         </div>
         <message-form [message]="message" [messages]="messages"></message-form>
-        <!-- <div class="instruction">
-          <div class="user-request">
-            <span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="terminal-control"><input type="text" class="request" name="input"></span>
-          </div>
-        </div> -->
-        <!-- <div class="instruction">
-          <div class="user-request">
-            <span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="terminal-control"><div class="user-input">
-              <message-form [message]="message" [messages]="messages"></message-form></div><span class="terminal-symbol">_</span></span>
-          </div>
-        </div> -->
+
       </div>
-      <footer class="terminal-footer">Created by "The Nines" - <a href="http://www.becode.org" target="_blank">BeCode Project</a> - <a href="cookies-policy.html" target="_blank">Cookies policy</a> - <a [routerLink]="['/privacy']" target="_blank">Privacy</a></footer>
+      <footer class="terminal-footer">Created by "The Nines" -
+        <a href="http://www.becode.org" target="_blank">BeCode Project</a> -
+        <a href="cookies-policy.html" target="_blank">Cookies policy</a> -
+        <a [routerLink]="['/privacy']" target="_blank">Privacy</a>
+      </footer>
     </main>
-    </div>
+  </div>

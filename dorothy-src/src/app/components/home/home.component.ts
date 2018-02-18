@@ -1,6 +1,9 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  ViewChild,
+  ElementRef,
+  AfterViewChecked
 } from '@angular/core';
 import {
   Message
@@ -13,7 +16,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewChecked {
+  @ViewChild('scroller') private feedContainer: ElementRef;
   public message: Message;
   public messages: Message[];
   public user: String;
@@ -26,6 +30,7 @@ export class HomeComponent implements OnInit {
     ];
     this.user = 'dorothian';
   }
+
 
   myStyle: object = {};
   myParams: object = {};
@@ -142,5 +147,13 @@ export class HomeComponent implements OnInit {
       },
       'retina_detect': true
     };
+  }
+
+  scrollToBottom(): void{
+    this.feedContainer.nativeElement.scrollTop = this.feedContainer.nativeElement.scrollHeight;
+  }
+
+  ngAfterViewChecked(){
+    this.scrollToBottom();
   }
 }

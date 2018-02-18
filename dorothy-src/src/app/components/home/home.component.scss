@@ -96,7 +96,7 @@ padding:0px;
 margin: 0px;
 color:rgba(255,255,255,1);
 background-color: rgba(0,0,0,1);
-font-family: 'Source Code Pro', monospace;
+
 }
 a {
 color:rgba(255,255,255,1);
@@ -105,6 +105,11 @@ a:hover {
 color:rgba(255,255,0,1);
 }
 
+
+main {
+  font-family: 'Source Code Pro', monospace !important;
+  font-size: 18px;
+}
 .terminal {
 width:95vw;
 margin: auto;
@@ -323,6 +328,12 @@ animation-iteration-count: infinite;
 50% {
   background-position: 100% 50%;
 }
+}
+
+.feedWrapper {
+  overflow-y: scroll;
+  min-height: 100px;
+  max-height: 350px;
 }
 
 #particles-js {
