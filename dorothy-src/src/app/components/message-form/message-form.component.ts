@@ -35,4 +35,10 @@ export class MessageFormComponent implements OnInit {
 
   }
 
+  public handleSubmit(event) {
+    if (event.keyCode === 13) {
+      this.sendMessage();
+    }
+  }
+
 }

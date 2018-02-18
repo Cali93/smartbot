@@ -6,15 +6,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DialogflowService } from '@app/services';
-import { MessageListComponent, MessageFormComponent, MessageItemComponent } from '@app/components';
+import { MessageListComponent, MessageFormComponent, MessageItemComponent, PrivacyComponent } from '@app/components';
 import { MaterialModule } from './material.module';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { CookieComponent } from './components/cookie/cookie.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  {path: 'privacy.html', component: PrivacyComponent},
+  {path: 'cookie.html', component: CookieComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     MessageListComponent,
     MessageFormComponent,
-    MessageItemComponent
+    MessageItemComponent,
+    PrivacyComponent,
+    HomeComponent,
+    CookieComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +34,8 @@ import { MaterialModule } from './material.module';
     FormsModule,
     HttpModule,
     ParticlesModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [
     DialogflowService
