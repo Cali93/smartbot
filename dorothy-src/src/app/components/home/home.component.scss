@@ -135,9 +135,9 @@ display: inline-block;
 background: transparent;
 font-weight: 400;
 }
-// .terminal-content {
-// // padding:25px 15px 25px;
-// }
+.terminal-content {
+padding:25px 15px 25px;
+}
 .terminal-content .message {
 display: none;
 }
@@ -362,7 +362,7 @@ animation-iteration-count: infinite;
   top:0;
   bottom:77%;
   border-radius: 50%;
-  background-image: url('../assets/images/dorocenter.png');
+  background-image: url('../../../assets/images/dorocenter.png');
   animation :rotato .4s .3s linear infinite;
   &:after{
     content:'';
@@ -401,7 +401,7 @@ background-image:linear-gradient(top,  #87e0fd 0%,#18CDCA 100%);
 }
 .blob3{
   animation : rotato .22s linear infinite reverse;
-  background-image: url('../assets/images/brainai.png');
+  background-image: url('../../../assets/images/brainai.png');
 }
 
 @keyframes rotato {
