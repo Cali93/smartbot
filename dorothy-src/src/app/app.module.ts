@@ -10,10 +10,12 @@ import { MessageListComponent, MessageFormComponent, MessageItemComponent, Priva
 import { MaterialModule } from './material.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { CookieComponent } from './components/cookie/cookie.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  {path: 'privacy', component: PrivacyComponent}
+  {path: 'privacy.html', component: PrivacyComponent},
+  {path: 'cookie.html', component: CookieComponent}
 ];
 
 @NgModule({
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     MessageFormComponent,
     MessageItemComponent,
     PrivacyComponent,
-    HomeComponent
+    HomeComponent,
+    CookieComponent
   ],
   imports: [
     BrowserModule,
