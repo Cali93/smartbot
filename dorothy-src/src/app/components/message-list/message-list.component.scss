@@ -1,5 +1,6 @@
 .chatlist{
-  height: 550px;
+  min-height: 100px;
+  max-height: 600px;
   overflow-y: auto;
 }
 

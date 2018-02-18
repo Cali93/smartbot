@@ -1,8 +1,7 @@
 .message {
-  font-size: 1.8em;
-  font-style: italic;
+  font-size: 1.5em;
   font-weight: bold;
-  font-family: 'Saira', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .timeform {
@@ -21,4 +20,38 @@
 .avatar{
   width: 50px;
   margin-right: 20px;
+}
+
+.list-group-item {
+  background: none !important;
+  animation-name: zoomInLeft !important;
+  animation-duration: 3s;
+}
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
 }

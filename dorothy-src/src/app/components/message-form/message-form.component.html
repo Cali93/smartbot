@@ -1,6 +1,12 @@
-<form class="chatcontrol">
+<!-- <form class="chatcontrol">
   <mat-form-field class="chatcontrol">
     <input matInput type="text" class="form-control chatinput" [(ngModel)]="message.content" name="content"><button type="button" class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
   </mat-form-field>
 
-</form>
+</form> -->
+
+<div class="instruction">
+    <div class="user-request">
+      <span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="terminal-control"><span class="terminal-symbol">_</span><div class="user-input"> <input class="terminal-input" type="text"  [(ngModel)]="message.content"></div></span> <button type="button" class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+    </div>
+  </div>

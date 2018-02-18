@@ -1,6 +1,59 @@
-<div id="particles-js">
-  <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
-</div>
+<div class="wrapper">
+
+      <div id="particles-js">
+          <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+        </div>
+      <!-- Add your site or application content here -->
+      <div class="is-loading">
+      <header class="round">
+          <div class="round-group">
+            <div class="round-item round-bg">
+              <div class="round-item round-top"></div>
+              <div class="round-item round-top"></div>
+            </div>
+          </div>
+        </header>
+        <main class="terminal">
+          <header class="terminal-header">
+            <div class="terminal-header-item">Terminal session</div>
+            <div class="terminal-header-item">
+              <button class="terminal-header-btn minimize" disabled><i class="fa fa-window-minimize" aria-hidden="true"></i></button>
+              <button class="terminal-header-btn maximize"><i class="fa fa-window-maximize" aria-hidden="true"></i></button>
+              <button class="terminal-header-btn close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+            </div>
+          </header>
+          <div class="terminal-content">
+            <!-- <div class="message">
+              ********************************************<br>
+              * I'm still learning from you.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+              * So I'm constantly upgrading my skills.&nbsp;&nbsp;&nbsp;*<br>
+              * All commands of last week are inactive.&nbsp;&nbsp;*<br>
+              ********************************************<br>
+              &nbsp;
+            </div> -->
+            <div class="instruction">
+              <div class="user-request"><span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="request">connexion -u {{ user }}</span></div>
+              <message-list class="answer" [messages]="messages"></message-list>
+            </div>
+            <message-form [message]="message" [messages]="messages"></message-form>
+            <!-- <div class="instruction">
+              <div class="user-request">
+                <span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="terminal-control"><input type="text" class="request" name="input"></span>
+              </div>
+            </div> -->
+            <!-- <div class="instruction">
+              <div class="user-request">
+                <span class="user">dorothAI@becode</span><span class="symbol">:~$</span><span class="terminal-control"><div class="user-input">
+                  <message-form [message]="message" [messages]="messages"></message-form></div><span class="terminal-symbol">_</span></span>
+              </div>
+            </div> -->
+          </div>
+          <footer class="terminal-footer">Created by "The Nine" - <a href="http://www.becode.org" target="_blank">BeCode Project</a> - <a href="cookies-policy.html" target="_blank">Cookies policy</a> - <a href="privacy.html" target="_blank">Privacy</a></footer>
+        </main>
+        </div>
+
+<!--
 <main>
   <div class="is-loading">
     <div class="circle">
@@ -24,54 +77,4 @@
   </div>
 </main>
 
-<!-- The content below is only a placeholder and can be replaced.
-<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
-  <div fxHide.gt-sm fxLayoutAlign="start center">
-    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span class="title">{{title}}</span>
-  </div>
-  <div fxHide.lt-md>
-    <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
-    <button mat-button routerLink="/home" routerLinkActive="active">
-      <i class="fa fa-home"></i>
-      <span translate>Home</span>
-    </button>
-    <button mat-button routerLink="/about" routerLinkActive="active">
-      <i class="fa fa-question-circle"></i>
-      <span translate>About</span>
-    </button>
-    <button mat-button routerLink="/chat" routerLinkActive="active">
-      <i class="fa fa-question-circle"></i>
-      <span translate>Chat</span>
-    </button>
-  </div>
-  <span fxFlex></span>
-  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
-    <mat-icon>language</mat-icon>
-  </button>
-  <mat-menu >
-    <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
-        {{language}}
-      </button>
-  </mat-menu>
-  <button mat-icon-button [matMenuTriggerFor]="userMenu">
-    <mat-icon>person</mat-icon>
-  </button>
-  <mat-menu>
-    <mat-list>
-      <mat-list-item>
-        <span translate>Logged in as</span>&nbsp;<b>Cali</b>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-    </mat-list>
-    <button mat-menu-item (click)="logout()" translate>Logout</button>
-  </mat-menu>
-</mat-toolbar>
-      <mat-sidenav-container class="example-container" *ngIf="shouldRun">
-          <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
-          <mat-sidenav-content>Main content</mat-sidenav-content>
-        </mat-sidenav-container>
-        <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
-      -->
+</div> -->

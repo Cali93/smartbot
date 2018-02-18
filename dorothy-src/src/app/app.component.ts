@@ -16,6 +16,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 export class AppComponent implements OnInit {
   public message: Message;
   public messages: Message[];
+  private user: String;
 
 
   constructor() {
@@ -23,6 +24,7 @@ export class AppComponent implements OnInit {
     this.messages = [
       new Message('Hello, I\'m so glad to meet you !', 'assets/images/brainai.png', new Date())
     ];
+    this.user = 'dorothian';
   }
 
   myStyle: object = {};
