@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit, AfterViewChecked {
     this.myParams = {
       particles: {
         number: {
-          value: 100,
+          value: 50,
         },
         color: {
           value: '#2b7b9e'
