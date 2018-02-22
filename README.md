@@ -1,7 +1,7 @@
 # Dorothy Smart AI Agent
 
 #### Dorothy est une intelligence artificielle créée via DialogFlow. Elle aura pour but d'aider les apprenants de BeCode.
-https://dorothycares.io
+Demo : https://dorothycares.io
 
 ## Guide d'utilisation :
 
